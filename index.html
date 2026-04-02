@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>我的第一个网站</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      text-align: center;
+    }
+    .box {
+      margin-top: 100px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: #fff;
+      color: #333;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    input {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
 
+<div class="box">
+  <h1>🚀 我的第一个网站</h1>
+  <p>输入你的名字：</p>
+  <input id="nameInput" placeholder="输入名字">
+  <br><br>
+  <button onclick="sayHello()">点我</button>
+  <p id="result"></p>
+</div>
+
+<script>
+  function sayHello() {
+    const name = document.getElementById("nameInput").value;
+    document.getElementById("result").innerText = "你好，" + name + " 👋";
+  }
+</script>
+
+</body>
+</html>
